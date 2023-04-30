@@ -50,8 +50,8 @@ def insert_newlines(string, every=48):
 
 
 
-with open('../Boards2.syx', 'r') as fp:
-    hex_list = ["{:02x}".format(ord(c)) for c in fp.read()]
+with open('../Boards2.syx', 'rb') as fp:
+    hex_list = ["{:02x}".format(c) for c in fp.read()]
 
 intro = hex_list[0:213]
 macro1 = hex_list[213:230]
