@@ -1,0 +1,102 @@
+Section: OSC 1
+
+3 : O1 Wave Interpolate
+4 : O1 Pulse Width Index
+5 : O1 VSync Depth
+6 : O1 Density
+7 : O1 Density Detune
+8 : O1 Semitones Tune
+9 : O1 Cents Tune
+
+Section: OSC 2
+
+10 : O2 Wave Interpolate
+11 : O2 Pulse Width Index
+12 : O2 VSync Depth
+13 : O2 Density
+14 : O2 Density Detune
+15 : O2 Semitones Tune
+16 : O2 Cents Tune
+
+Section: Mixer
+
+2 : Post FX Volume
+17 : OSC 1 Volume
+18 : OSC 2 Volume
+19 : Ring Volume
+20 : Noise Volume
+
+Section: Filter
+
+21 : Cutoff Frequency
+22 : Resonance
+23 : Drive
+24 : Key Track
+25 : Env2 Mod
+
+Section: Env 1
+
+26 : Env 1 Attack
+27 : Env 1 Decay
+28 : Env 1 Sustain
+29 : Env 1 Release
+
+Section: Env 2
+
+30 : Env 2 Attack
+31 : Env 2 Decay
+32 : Env 2 Sustain
+33 : Env 2 Release
+
+Section: Env 3
+
+34 : Env 3 Delay
+35 : Env 3 Attack
+36 : Env 3 Decay
+37 : Env 3 Sustain
+38 : Env 3 Release
+
+Section: LFO 1
+
+39 : LFO 1 Rate
+40 : LFO 1 Sync
+41 : LFO 1 Slew
+
+Section: LFO 2
+
+42 : LFO 2 Rate
+43 : LFO 2 Sync
+44 : LFO 2 Slew
+
+Section: FX
+
+45 : Distortion Level
+46 : Chorus Level
+47 : Chorus Rate
+48 : Chorus Feedback
+49 : Chorus Depth
+50 : Chorus Delay
+1 : Portamento Rate
+
+Section: Modulation Matrix
+
+51 : Mod Matrix 1
+52 : Mod Matrix 2
+53 : Mod Matrix 3
+54 : Mod Matrix 4
+55 : Mod Matrix 5
+56 : Mod Matrix 6
+57 : Mod Matrix 7
+58 : Mod Matrix 8
+59 : Mod Matrix 9
+60 : Mod Matrix 10
+61 : Mod Matrix 11
+62 : Mod Matrix 12
+63 : Mod Matrix 13
+64 : Mod Matrix 14
+65 : Mod Matrix 15
+66 : Mod Matrix 16
+67 : Mod Matrix 17
+68 : Mod Matrix 18
+69 : Mod Matrix 19
+70 : Mod Matrix 20
