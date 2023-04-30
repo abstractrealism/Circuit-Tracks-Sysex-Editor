@@ -4,15 +4,44 @@ import threading
 import binascii
 from time import sleep
 from time import strftime, localtime
-from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtGui import QGuiApplication, QFont, QFontDatabase
+# from PyQt6.QtGui import QFont, QFontDatabase
 from PyQt6.QtQml import QQmlApplicationEngine
 from PyQt6.QtQuick import QQuickWindow
 from PyQt6.QtCore import QObject, pyqtSignal
+
+# id = QFontDatabase.addApplicationFont("./UI/Consolas-Font/CONSOLA.TTF")
+# if id < 0: print("Error with fonts")
+
+# import os
+# from PyQt6.QtGui import QFontDatabase
+
+
+    # # Create a QFont object with the font family name and the desired size
+    # font = QtGui.QFont(consola_family, 12)
+
+    # # Set the font for a widget
+    # widget.setFont(font)
+
 
 class Backend(QObject):
 
     def __init__(self):
         QObject.__init__(self)
+        # Get the path to the font file
+        font_file_path = os.path.join(".", "UI", "Consolas-Font", "CONSOLA.TTF")
+
+        # Load the font file
+        font_id = QFontDatabase.addApplicationFont("/Users/alexander/Dropbox/My Scripts/Python/sysexApp/CONSOLA.TTF")
+
+        # Check if the font was loaded successfully
+        if font_id == -1:
+            print("Error: Failed to load font")
+        else:
+            # Get the font family name
+            consola_family = QFontDatabase.applicationFontFamilies(font_id)[0]
+            print(consola_family)
+
 
     updated = pyqtSignal(str, arguments=['updater'])
 
